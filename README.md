@@ -1,4 +1,4 @@
-##SilverStripe exercise for TRAINOR
+## SilverStripe exercise for TRAINOR
 
 ## Overview
 
