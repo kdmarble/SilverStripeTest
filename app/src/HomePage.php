@@ -6,6 +6,7 @@ use Page;
 use SilverStripe\Forms\TextField;
 use SilverStripe\Assets\Image;
 use SilverStripe\AssetAdmin\Forms\UploadField;
+use SilverStripe\Forms\Tab;
 
 class HomePage extends Page
 {
@@ -25,12 +26,10 @@ class HomePage extends Page
     {
         $fields = parent::getCMSFields();
         $fields->addFieldToTab('Root.Main', TextField::create('Subtitle'), 'Content');
-        $fields->addFieldToTab('Root.Attachments', $photo = UploadField::create('Photo'));
-
+        $fields->addFieldToTab('Root.Image', $photo = UploadField::create('Photo'));
         $photo
             ->setFolderName('example-photos')
             ->getValidator()->setAllowedExtensions(array('jpg', 'jpeg', 'png'));
-
         return $fields;
     }
 }
