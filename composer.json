@@ -25,6 +25,9 @@
             "install-frameworkmissing.html",
             "install.php",
             "web.config"
+        ],
+        "expose": [
+            "themes/simple/css"
         ]
     },
     "config": {
