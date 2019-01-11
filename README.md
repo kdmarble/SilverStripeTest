@@ -1,3 +1,7 @@
 ## SilverStripe exercise for TRAINOR
 
 Could potentially add node_modules and public/assets to gitignore, if necessary/used.
+
+* Page.ss in themes/ loads as the default page with necessary head, links, and scripts. 
+* Various components can be stripped away to the themes/(my-theme)/includes directory and included in default Page.ss. 
+* Main content can be stripped out to $Layout variable, which will load various .ss layouts depending on page visited. 
